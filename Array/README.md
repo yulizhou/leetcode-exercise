@@ -1,5 +1,10 @@
 # Array
 
+## 88. Merge Sorted Array
+[Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
+Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
+
+
 ## 697. Degree of an Array
 The basic idea is to use a data structure to store the count and the first and last position of the elements in the array. That's because we need to find out the degree first and at the same time note down the first and last position for the second loop. Then in the second loop, we find the subarray with the minimum length.
 
