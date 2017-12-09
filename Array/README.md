@@ -1,5 +1,9 @@
 # Array
 
+## 1. Two Sum
+First loop creates the mapping from array elements to cooresponding indices. The second loop if the condition met.
+
+
 ## 88. Merge Sorted Array
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
