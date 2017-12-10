@@ -13,6 +13,9 @@ Quite similar to problem 26. We use two pointers.
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
 
+## 661. Image Smoother
+Iterate over each pixel and for each pixel, iterate over each surrounding pixel. Make sure to deal with boundaries.
+
 ## 665. Non-decreasing Array
 [Reference](http://www.cnblogs.com/grandyang/p/7565424.html)
 We have several cases here. We only do soemthing when we found the current element is less than the previous one (`b > current`), because we assume previous pairs are solved and should be `a <= b`.
