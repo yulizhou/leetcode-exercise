@@ -9,6 +9,9 @@ We maintain two pointers: one points to the "new" array and the other one is the
 ## 27. Remove Element
 Quite similar to problem 26. We use two pointers.
 
+## 35. Search Insert Position
+Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
+
 ## 88. Merge Sorted Array
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
