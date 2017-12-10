@@ -16,6 +16,9 @@ Nothing to say. A regular approach has O(n). A better one is to use binary searc
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
 
+## 566. Reshape the Matrix
+A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
+
 ## 581. Shortest Unsorted Continuous Subarray
 [Reference](https://discuss.leetcode.com/topic/89282/java-o-n-time-o-1-space/5)
 [Reference](http://www.cnblogs.com/grandyang/p/6876457.html)
