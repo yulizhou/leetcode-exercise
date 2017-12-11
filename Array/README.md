@@ -20,6 +20,33 @@ Best solution so far is from Jon Bentley's code in 1984. The post explains it we
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
 
+## 119. Pascal's Triangle II
+If O(K) space, then we have to update the previous calculated row and calculate the next row. So we need to use the attribute that the kth element on nth row equals the k-1 element on n-1 row plus k element on n-1 row. Another attribute is that the number of elements on nth row (one indexing, not zero) is n. Then we create two loops, one loops over rows and the other one calculates each element on a row. The intermediate process of the code looks like the following:
+```
+i=0, layer=1
+res = [1, 0, 0, 0]
+
+
+i=1, layer=2
+j=3
+res[3]=res[3]+res[2], res = [1, 0, 0, 0]
+j=2
+res[2]=res[2]+res[1], res = [1, 0, 0, 0]
+j=1
+res[1]=res[1]+res[0], res = [1, 1, 0, 0]
+
+
+i=2, layer=3
+j=3
+res[3]=res[3]+res[2], res = [1, 1, 0, 0]
+j=2
+res[2]=res[2]+res[1], res = [1, 1, 1, 0]
+j=1
+res[1]=res[1]+res[0], res = [1, 2, 1, 0]
+
+......
+```
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
