@@ -56,6 +56,9 @@ The test cases of OJ may have missed some cases. The most intuitive way is to ch
 ## 167. Two Sum II - Input array is sorted
 The basic idea is that if a sum is smaller than the target, then the smaller number must be too small and should be a larger number. If a sum is larger than the target, then the larger number must be too large and should be smaller. Based on the logic, we can maintain two pointers from two ends of the array and iterating to the middle. This only works if the array is sorted. 
 
+## 169. Majority Element
+Sort the array and then get the middle element.
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
