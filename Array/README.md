@@ -50,6 +50,9 @@ res[1]=res[1]+res[0], res = [1, 2, 1, 0]
 ## 121. Best Time to Buy and Sell Stock
 Basically we want to find the smallest price followed by a price that can give a max profit. So a for loop can be seen as following the timeline forward. If we find a small price, then it's the new minimum price. If we find a higher price, then we want to know if it can give a higher max profit. 
 
+## 122. Best Time to Buy and Sell Stock II
+The test cases of OJ may have missed some cases. The most intuitive way is to check if the next price higher than the current price and buy & sell if it is. Otherwise we do nothing. This solution passes OJ but there's a situation that we may not have the chance to sell because there's a consecutive downfall.  
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
