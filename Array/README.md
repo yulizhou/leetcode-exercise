@@ -59,6 +59,9 @@ The basic idea is that if a sum is smaller than the target, then the smaller num
 ## 169. Majority Element
 Sort the array and then get the middle element.
 
+## 189. Rotate Array
+There are many ways to solve this. Here the reserve way is the most intuitive and simple way, in my opinion, to solve it, with O(1) space.
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
