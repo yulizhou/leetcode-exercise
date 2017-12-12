@@ -92,6 +92,9 @@ Nothing much to say.
 ## 532. K-diff Pairs in an Array
 Since it's a counting problem, we consider using a hash table. Basically we record the frequency of each element. Then we try to find out if the element plus k is also in the hash table.
 
+## 561. Array Partition I
+The key point here is that we need to make sure the pair of elements are as close to each other as possible so that we won't lose a large number when putting a very large and very small number together. So we can simply sort the array first and get each consecutive pairs.
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
