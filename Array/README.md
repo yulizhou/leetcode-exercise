@@ -77,6 +77,9 @@ We "cheat" by using the Gaussian way to calculate the sum. The solution has O(n)
 ## 283. Move Zeroes
 When facing array-element-movement problems, a very powerful tool is using two pointers. Here we have a regular pointer iterating over the array and a slow pointer that points to the supposed-to-be index of non-zero elements in the ideal resulting array.
 
+## 414. Third Maximum Number
+Basically we maintain three variables for the largest three elements. If at the end we only have two distinct valid values then we return the largest element. Otherwise we return the third largest one.
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
