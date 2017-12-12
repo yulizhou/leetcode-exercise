@@ -86,6 +86,9 @@ With O(n) time and O(1) space limitation, we can only do one or more sequential 
 ## 485. Max Consecutive Ones
 Nothing much to say. 
 
+## 532. K-diff Pairs in an Array
+Since it's a counting problem, we consider using a hash table. Basically we record the frequency of each element. Then we try to find out if the element plus k is also in the hash table.
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
