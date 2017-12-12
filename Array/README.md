@@ -68,6 +68,9 @@ There are many ways to solve this. Here the reserve way is the most intuitive an
 ## 217. Contains Duplicate
 Pretty straightfoward. We use a hash table (`unordered_map` in C++) to store the element visited in order to obtain a O(n) time and space.
 
+## 219. Contains Duplicate II
+We're still using `unordered_map` here. There are three cases. For a given element, if it's the first time we see it, simply add to the hash table along with the current index. If we find it in the hash table, then we check to see if the difference between the current pointer position and the previous recorded index is less than k. If it is, then we simply return true. If not, since the next time we will only compare the next index of this element (if more) with the current one, then we need to overwrite the recorded index in the hash table. 
+
 ## 566. Reshape the Matrix
 A straightforward way is to iterate over the original matrix and maintain two pointers as the new row and new column pointing to the corresponding position in the new matrix.
 
