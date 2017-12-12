@@ -23,6 +23,9 @@ There are three cases here. If the last digit is not 9, then we can just plus on
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
 
+## 118. Pascal's Triangle
+Use the triangle's attribute to iteratively generate elements.
+
 ## 119. Pascal's Triangle II
 If O(K) space, then we have to update the previous calculated row and calculate the next row. So we need to use the attribute that the kth element on nth row equals the k-1 element on n-1 row plus k element on n-1 row. Another attribute is that the number of elements on nth row (one indexing, not zero) is n. Then we create two loops, one loops over rows and the other one calculates each element on a row. The intermediate process of the code looks like the following:
 ```
