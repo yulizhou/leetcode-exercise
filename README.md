@@ -80,6 +80,9 @@ We "cheat" by using the Gaussian way to calculate the sum. The solution has O(n)
 ## 283. Move Zeroes
 When facing array-element-movement problems, a very powerful tool is using two pointers. Here we have a regular pointer iterating over the array and a slow pointer that points to the supposed-to-be index of non-zero elements in the ideal resulting array.
 
+## 303. Range Sum Query - Immutable
+At first I didn't fully understand the problem. I was thinking writing one function that finds the sum each time when an array and a range were given. However, if we want to call it as a method of an object and also achieve O(n) time, we have to save the sum somewhere and query the result when necessary. So we can just use cumulative sum.
+
 ## 414. Third Maximum Number
 Basically we maintain three variables for the largest three elements. If at the end we only have two distinct valid values then we return the largest element. Otherwise we return the third largest one.
 
