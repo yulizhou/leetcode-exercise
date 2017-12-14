@@ -6,6 +6,9 @@ First loop creates the mapping from array elements to cooresponding indices. The
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
+## 14. Longest Common Prefix
+We use two pointers, one for each chracter position in strings and one for each string. Then we loop over and check if there is any difference.
+
 ## 26. Remove Duplicates from Sorted Array
 We maintain two pointers: one points to the "new" array and the other one is the iterator `j`. When the `j` pointer finds duplicate, it skips it and if it finds a new element, the first pointer will increase and copy the new found element over.
 
