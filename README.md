@@ -183,6 +183,10 @@ If we list all scenarios, we can see that in order to contain B, string A must b
 ## 695. Max Area of Island
 There are two sub problems: one is how to visit all elements and the other one is how to explore the surrounding elements of one element. The first problem can be solved simply by iterating over the grid. The second problem can be solved recursively by visiting each of the four directions. The base case of the recursion is when the element is out of the grid or is visited. Otherwise we increase the currently counting island size by 1, mark it as visited, and continue visiting surrounding elements. 
 
+## 696. Count Binary Substrings
+[Reference](http://www.cnblogs.com/grandyang/p/7716150.html)
+The essense of this problem is to understand how we increase the count. Every time we encounter a different digit, if the previous number of consecutive digits is greater or equal to the current number of consecutive digits (e.g. 110 or 01), we increase the total count. So we need to maintain a previous digit counting. 
+
 ## 697. Degree of an Array
 The basic idea is to use a data structure to store the count and the first and last position of the elements in the array. That's because we need to find out the degree first and at the same time note down the first and last position for the second loop. Then in the second loop, we find the subarray with the minimum length.
 
