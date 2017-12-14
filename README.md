@@ -124,6 +124,9 @@ The complication here is the negative numbers. So the answer is either the large
 ## 643. Maximum Average Subarray I
 Start with the sum of the first k elements and slide the window. 
 
+## 657. Judge Route Circle
+There are many ways to solve this. I think it's intuitive to see this in a coordinate system. If we come back to the origin, then it's circle. 
+
 ## 661. Image Smoother
 Iterate over each pixel and for each pixel, iterate over each surrounding pixel. Make sure to deal with boundaries.
 
