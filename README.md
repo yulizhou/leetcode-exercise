@@ -110,6 +110,9 @@ Basically we maintain three variables for the largest three elements. If at the 
 ## 448. Find All Numbers Disappeared in an Array
 With O(n) time and O(1) space limitation, we can only do one or more sequential for loops without hash tables. From the problem, the value of the element can also represent an index of the array. So we can come up with a way to put every value to the corresponding index position and get the ones that are not aligne as our answer. 
 
+## 459. Repeated Substring Pattern
+First we need to understand one rule that each substring cannot be longer than half of the original string. Otherwise the original string cannot be divided into multiple substrings. Based on that, we can iterate over each substring from the first half of the original string with whose length can be divided by the original string, and concatenate and compare with the original string.
+
 ## 485. Max Consecutive Ones
 Nothing much to say. 
 
