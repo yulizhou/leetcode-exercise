@@ -116,6 +116,9 @@ Nothing much to say.
 ## 532. K-diff Pairs in an Array
 Since it's a counting problem, we consider using a hash table. Basically we record the frequency of each element. Then we try to find out if the element plus k is also in the hash table.
 
+## 541. Reverse String II
+My original thought was to divide the string into k substrings and reverse when it's 2k, 4k, etc. Then I found out we could just use 2k as the division instead of k. 
+
 ## 551. Student Attendance Record I
 The logic of this problem is very simple. There are many ways to do it. The solution here uses some string functions.
 
