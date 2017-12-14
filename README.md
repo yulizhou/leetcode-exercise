@@ -118,6 +118,9 @@ There are many approaches. This one has O(nlogn) for time complexity and O(n) fo
 ## 605. Can Place Flowers
 Just iterate over the array and find spot that has both empty adjacent elements. 
 
+## 606. Construct String from Binary Tree
+We need to understand every case. If both left and right exist, we return the current val and left and right values in parenthesis. If only left exists, we only return the current val and the left value in parenthesis. If only right exists, we need to return the current value, an empty parenthesis and the right value in parenthesis. If neither left nor right exists, we only return the current value.
+
 ## 628. Maximum Product of Three Numbers
 The complication here is the negative numbers. So the answer is either the largest three or the smallest two times the largest number. 
 
