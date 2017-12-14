@@ -147,6 +147,9 @@ b = current;
 ## 674. Longest Continuous Increasing Subsequence
 Since we only care about the longest subsequence, we can start from the first element and return the first matched result. We check if the current element is larger than the previous one and increase the counter if it is. Otherwise we reset the counter to 1. 
 
+## 686. Repeated String Match
+If we list all scenarios, we can see that in order to contain B, string A must be repeated at least `B.length() / A.length() + 2` times. 
+
 ## 695. Max Area of Island
 There are two sub problems: one is how to visit all elements and the other one is how to explore the surrounding elements of one element. The first problem can be solved simply by iterating over the grid. The second problem can be solved recursively by visiting each of the four directions. The base case of the recursion is when the element is out of the grid or is visited. Otherwise we increase the currently counting island size by 1, mark it as visited, and continue visiting surrounding elements. 
 
