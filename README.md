@@ -9,6 +9,9 @@ As long as we understand how Roman number works, the solution is pretty straight
 ## 14. Longest Common Prefix
 We use two pointers, one for each chracter position in strings and one for each string. Then we loop over and check if there is any difference.
 
+## 20. Valid Parentheses
+This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
+
 ## 26. Remove Duplicates from Sorted Array
 We maintain two pointers: one points to the "new" array and the other one is the iterator `j`. When the `j` pointer finds duplicate, it skips it and if it finds a new element, the first pointer will increase and copy the new found element over.
 
