@@ -110,6 +110,9 @@ Nothing much to say.
 ## 532. K-diff Pairs in an Array
 Since it's a counting problem, we consider using a hash table. Basically we record the frequency of each element. Then we try to find out if the element plus k is also in the hash table.
 
+## 557. Reverse Words in a String III
+There is a way to solve this with `reverse()` and `stringstream`. But it's not hard to only use simple string tools. Basically we just maintain two pointers, one for the start of a word and one for the end of a word. Then we find each word and swap to reverse characters.
+
 ## 561. Array Partition I
 The key point here is that we need to make sure the pair of elements are as close to each other as possible so that we won't lose a large number when putting a very large and very small number together. So we can simply sort the array first and get each consecutive pairs.
 
