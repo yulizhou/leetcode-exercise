@@ -12,6 +12,9 @@ Quite similar to problem 26. We use two pointers.
 ## 35. Search Insert Position
 Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
 
+## 38. Count and Say
+The most difficult part of this problem is to figure out the rule. Basically starting from the 2nd layer, each layer is a string describing the number of consecutive numbers in the previous string.
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
