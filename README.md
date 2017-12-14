@@ -68,6 +68,9 @@ Sort the array and then get the middle element.
 ## 189. Rotate Array
 There are many ways to solve this. Here the reserve way is the most intuitive and simple way, in my opinion, to solve it, with O(1) space.
 
+## 198. House Robber
+Since our final answer depends on previous selection of houses to rob, we can consider this a dynamic programming problem. The status `dp[i]` is the current maximum money robbed. The transition function is choosing the maximum among two options: the current ith house and the (i-2)th house or just the (i-1)th house. The function is `dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]`. 
+
 ## 217. Contains Duplicate
 Pretty straightfoward. We use a hash table (`unordered_map` in C++) to store the element visited in order to obtain a O(n) time and space.
 

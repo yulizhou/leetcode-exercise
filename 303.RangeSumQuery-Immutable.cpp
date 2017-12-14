@@ -1,14 +1,14 @@
 class NumArray {
 public:
     NumArray(vector<int> &nums) {
-        sums = nums;
-        for (int i = 1; i < nums.size(); i++) {
-            sums[i] += sums[i - 1];
-        }
+        accuSum.push_back(0);
+        for (int num : nums)
+            accuSum.push_back(accuSum.back() + num);
     }
+
     int sumRange(int i, int j) {
-        return i == 0 ? sums[j] : sums[j] - sums[i - 1];
+        return accuSum[j + 1] - accuSum[i];
     }
 private:
-    vector<int> sums;
+    vector<int> accuSum;
 };
