@@ -147,6 +147,9 @@ b = current;
 ## 674. Longest Continuous Increasing Subsequence
 Since we only care about the longest subsequence, we can start from the first element and return the first matched result. We check if the current element is larger than the previous one and increase the counter if it is. Otherwise we reset the counter to 1. 
 
+## 680. Valid Palindrome II
+The tricky part of this problem is that when we encounter a different pair of characters from left and right, we don't know which one we should delete. So we need to see both. The solution is a greedy algorithm because we think the previous status returns the optimal solution, rather than having us choose (e.g. max or min). 
+
 ## 686. Repeated String Match
 If we list all scenarios, we can see that in order to contain B, string A must be repeated at least `B.length() / A.length() + 2` times. 
 
