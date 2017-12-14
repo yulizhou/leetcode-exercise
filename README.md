@@ -113,6 +113,9 @@ With O(n) time and O(1) space limitation, we can only do one or more sequential 
 ## 485. Max Consecutive Ones
 Nothing much to say. 
 
+## 520. Detect Capital
+Nothing much to say. 
+
 ## 532. K-diff Pairs in an Array
 Since it's a counting problem, we consider using a hash table. Basically we record the frequency of each element. Then we try to find out if the element plus k is also in the hash table.
 
