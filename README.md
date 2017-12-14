@@ -18,6 +18,9 @@ We maintain two pointers: one points to the "new" array and the other one is the
 ## 27. Remove Element
 Quite similar to problem 26. We use two pointers.
 
+## 28. Implement strStr()
+Let's not use `find()`. We can maintain two pointers, one iterating each character and one iterating over the needle.
+
 ## 35. Search Insert Position
 Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
 
