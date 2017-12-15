@@ -210,3 +210,6 @@ We use a cursor to keep up with the start of every character (2 bits or 1 bit). 
 
 ## 724. Find Pivot Index
 The basic idea is to compare the sum from the left side with the sum from the right side. How to get the right sum? By subtracting the current left sum and the cursor number from the sum of the whole array: `leftSum == rightSum - leftSum - nums[i]`.
+
+## 733. Flood Fill
+This is just a tree problem. Both BFS or DFS are fine. I used DFS. However OJ gave me Runtime error I haven't figured out why. The algorithms seems sound. 
