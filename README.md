@@ -54,6 +54,9 @@ This problem is similar to the last one. The only difference is that we need to 
 [Reference](http://www.cnblogs.com/grandyang/p/4452220.html)
 We can't use multiple for loops because we'll get performance issue. Since this is a combination problem, we can use the tree structure. We treat each character as a node and do a BFS/DFS search for each combination.
 
+## 18. 4Sum
+Seems like there is no better solution other than applying the previous 3sum process and add one more for loop.
+
 ## 20. Valid Parentheses
 This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
 
