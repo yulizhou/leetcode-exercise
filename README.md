@@ -110,6 +110,9 @@ At first I didn't fully understand the problem. I was thinking writing one funct
 ## 414. Third Maximum Number
 Basically we maintain three variables for the largest three elements. If at the end we only have two distinct valid values then we return the largest element. Otherwise we return the third largest one.
 
+## 434. Number of Segments in a String
+The problem is not hard, but there are some corner cases to be aware of. Originally I assumed the input string must have words and spaces but missed the case that the string only has spaces or lots of trailing spaces. 
+
 ## 443. String Compression
 This solution is from Leetcode. The basic idea is to maintain 3 pointers pointing to the beginning of a group, the end of a group, and the number of writing operation (i.e. a character and its count). 
 
