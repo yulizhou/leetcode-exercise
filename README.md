@@ -3,6 +3,9 @@
 ## 1. Two Sum
 First loop creates the mapping from array elements to cooresponding indices. The second loop if the condition met.
 
+## 2. Add Two Numbers
+The algorithm is simple enough. The only thing is to understand how to manipulate linked list.
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
