@@ -35,6 +35,9 @@ The tricky part is we cannot use extra space. Otherwise we can convert to string
 ## 11. Container With Most Water
 The key point here is that multiple containers can form one large container. We can maintain two pointers from left and right end of the array. During the movement to the center, we save the largest area obtained. 
 
+## 12. Integer to Roman
+We can just list all possible notations. 
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
