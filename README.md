@@ -107,6 +107,9 @@ At first I didn't fully understand the problem. I was thinking writing one funct
 ## 414. Third Maximum Number
 Basically we maintain three variables for the largest three elements. If at the end we only have two distinct valid values then we return the largest element. Otherwise we return the third largest one.
 
+## 443. String Compression
+This solution is from Leetcode. The basic idea is to maintain 3 pointers pointing to the beginning of a group, the end of a group, and the number of writing operation (i.e. a character and its count). 
+
 ## 448. Find All Numbers Disappeared in an Array
 With O(n) time and O(1) space limitation, we can only do one or more sequential for loops without hash tables. From the problem, the value of the element can also represent an index of the array. So we can come up with a way to put every value to the corresponding index position and get the ones that are not aligne as our answer. 
 
