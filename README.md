@@ -6,6 +6,9 @@ First loop creates the mapping from array elements to cooresponding indices. The
 ## 2. Add Two Numbers
 The algorithm is simple enough. The only thing is to understand how to manipulate linked list.
 
+## 3. Longest Substring Without Repeating Characters
+We can use set and sliding window technique to do this. Basically we maintain a sliding window. For each window, we add all chars into the set and then extend the right side of the window. 
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
