@@ -25,6 +25,9 @@ If i + 1 < j && S[i] == S[j] && P(i+1, j-1)
 P(i, j) = true
 ```
 
+## 8. String to Integer (atoi)
+[Reference](https://discuss.leetcode.com/topic/2666/my-simple-solution/2)
+The problem description is quite vague. The reference handles the overflow well with a magic number '7'. 
 
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
