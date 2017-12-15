@@ -29,6 +29,9 @@ P(i, j) = true
 [Reference](https://discuss.leetcode.com/topic/2666/my-simple-solution/2)
 The problem description is quite vague. The reference handles the overflow well with a magic number '7'. 
 
+## 9. Palindrome Number
+The tricky part is we cannot use extra space. Otherwise we can convert to string and manipulate it. So the problem now is how to get the first and last digit. We can use / and % to solve.
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
