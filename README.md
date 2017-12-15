@@ -50,6 +50,10 @@ Basically we sort the array first. Then we set the target to be 0-nums[k]. Then 
 ## 16. 3Sum Closest
 This problem is similar to the last one. The only difference is that we need to maintain a diff for the absolute difference. 
 
+## 17. Letter Combinations of a Phone Number
+[Reference](http://www.cnblogs.com/grandyang/p/4452220.html)
+We can't use multiple for loops because we'll get performance issue. Since this is a combination problem, we can use the tree structure. We treat each character as a node and do a BFS/DFS search for each combination.
+
 ## 20. Valid Parentheses
 This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
 
