@@ -32,6 +32,9 @@ The problem description is quite vague. The reference handles the overflow well 
 ## 9. Palindrome Number
 The tricky part is we cannot use extra space. Otherwise we can convert to string and manipulate it. So the problem now is how to get the first and last digit. We can use / and % to solve.
 
+## 11. Container With Most Water
+The key point here is that multiple containers can form one large container. We can maintain two pointers from left and right end of the array. During the movement to the center, we save the largest area obtained. 
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
