@@ -47,6 +47,9 @@ We use two pointers, one for each chracter position in strings and one for each 
 ## 15. 3Sum
 Basically we sort the array first. Then we set the target to be 0-nums[k]. Then we use two pointers to find the two numbers that can sum up to be the target.
 
+## 16. 3Sum Closest
+This problem is similar to the last one. The only difference is that we need to maintain a diff for the absolute difference. 
+
 ## 20. Valid Parentheses
 This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
 
