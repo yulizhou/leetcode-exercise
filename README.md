@@ -9,6 +9,23 @@ The algorithm is simple enough. The only thing is to understand how to manipulat
 ## 3. Longest Substring Without Repeating Characters
 We can use set and sliding window technique to do this. Basically we maintain a sliding window. For each window, we add all chars into the set and then extend the right side of the window. 
 
+## 5. Longest Palindromic Substring
+Each subtring palindrome search is a DP problem. We start from the assumed palindrome center and spread out to left and right. The status P(i, j) is a boolean that says if a subtring i to j is a palindrome. The transition function is:
+```
+// single char
+If i == j, 
+P(i, j) = true
+
+// two same chars
+If i + 1 = j && S[i] == S[j],
+P(i, j) = true
+
+// more than two chars
+If i + 1 < j && S[i] == S[j] && P(i+1, j-1)
+P(i, j) = true
+```
+
+
 ## 13. Roman to Integer
 As long as we understand how Roman number works, the solution is pretty straightforward. The tricky part to me is how to interpret "VIV" (it's 9, not 11). 
 
