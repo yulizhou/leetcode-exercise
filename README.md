@@ -64,6 +64,9 @@ An very interesting solution that maintains two pointers with a fixed distance o
 ## 20. Valid Parentheses
 This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
 
+## 21. Merge Two Sorted Lists
+One way is to create a new list and iterate over two lists and put the smaller value first. But I think the recursion method is more intuitive. Basically, if the current l1 value is smaller than the current l2 value, we just make the `l1->next` be the next call of the funtion but with the next l1 value and the current l2 value. The base cases are l1 or l2 finished iteration. So we simply return l2 and l1 respectively.
+
 ## 26. Remove Duplicates from Sorted Array
 We maintain two pointers: one points to the "new" array and the other one is the iterator `j`. When the `j` pointer finds duplicate, it skips it and if it finds a new element, the first pointer will increase and copy the new found element over.
 
