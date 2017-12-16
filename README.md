@@ -57,6 +57,10 @@ We can't use multiple for loops because we'll get performance issue. Since this 
 ## 18. 4Sum
 Seems like there is no better solution other than applying the previous 3sum process and add one more for loop.
 
+## 19. Remove Nth Node From End of List
+[Reference](http://www.cnblogs.com/grandyang/p/4606920.html)
+An very interesting solution that maintains two pointers with a fixed distance of n to find the nth element from the end of the list. 
+
 ## 20. Valid Parentheses
 This is a very easy problem with stack. If we encounter a left parenthesis, we push. If right, we check if the stack is empty. If it is empty, we return false. Otherwise we check the top one if it's the pairing one. If it is, then we pop and continue.
 
