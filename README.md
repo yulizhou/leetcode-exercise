@@ -67,6 +67,9 @@ This is a very easy problem with stack. If we encounter a left parenthesis, we p
 ## 21. Merge Two Sorted Lists
 One way is to create a new list and iterate over two lists and put the smaller value first. But I think the recursion method is more intuitive. Basically, if the current l1 value is smaller than the current l2 value, we just make the `l1->next` be the next call of the funtion but with the next l1 value and the current l2 value. The base cases are l1 or l2 finished iteration. So we simply return l2 and l1 respectively.
 
+## 22. Generate Parentheses
+n parenthesis must have n left ones and n right ones. So we can maintain two counters for each. Note that since the last symbol must be the right parenthesis, if we use recursion, then one of the base case is to check if left is larger than right. If it is, the result is invalid. The whole combination can be represented as a tree. We can just search the tree with recursion.
+
 ## 26. Remove Duplicates from Sorted Array
 We maintain two pointers: one points to the "new" array and the other one is the iterator `j`. When the `j` pointer finds duplicate, it skips it and if it finds a new element, the first pointer will increase and copy the new found element over.
 
