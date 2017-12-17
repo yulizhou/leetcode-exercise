@@ -82,6 +82,11 @@ Quite similar to problem 26. We use two pointers.
 ## 28. Implement strStr()
 Let's not use `find()`. We can maintain two pointers, one iterating each character and one iterating over the needle.
 
+## 31. Next Permutation
+The solution is from the Leetcode dicussion. It's very clever. We need to understand two rules. First, for an all decending array, we need to return the reverse. Second, for any number `nums[i]` and the decending array on its right, we need to find the smallest next number from the right and swap with `nums[i]` and reverse the rest of the right array. Then we can iterate from the end of the array starting with `nums.size()-2` and its right array of `nums.size()-1`.
+
+Why the second rule? Assuming we have a descending array on the right of `nums[i]` and `nums[i+1]` is greater than `nums[i]`, because we are looking for the next smallest permutation, we need to find the next smallest number from the right to make the array larger. So we find one from the right and do the swap. Then because we need to make the new right array as small as possible, we just do the reverse.
+
 ## 35. Search Insert Position
 Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
 
