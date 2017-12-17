@@ -70,6 +70,9 @@ One way is to create a new list and iterate over two lists and put the smaller v
 ## 22. Generate Parentheses
 n parenthesis must have n left ones and n right ones. So we can maintain two counters for each. Note that since the last symbol must be the right parenthesis, if we use recursion, then one of the base case is to check if left is larger than right. If it is, the result is invalid. The whole combination can be represented as a tree. We can just search the tree with recursion.
 
+## 24. Swap Nodes in Pairs
+The algorithm is simple. But the linking operation could be very confusing without a visual. Basically we need to maintain a LinkNode as a iterating cursor, a copy LinkNode to avoid manipulating the original head cursor, and a temporary node to store the necessary information.
+
 ## 26. Remove Duplicates from Sorted Array
 We maintain two pointers: one points to the "new" array and the other one is the iterator `j`. When the `j` pointer finds duplicate, it skips it and if it finds a new element, the first pointer will increase and copy the new found element over.
 
