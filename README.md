@@ -87,6 +87,10 @@ The solution is from the Leetcode dicussion. It's very clever. We need to unders
 
 Why the second rule? Assuming we have a descending array on the right of `nums[i]` and `nums[i+1]` is greater than `nums[i]`, because we are looking for the next smallest permutation, we need to find the next smallest number from the right to make the array larger. So we find one from the right and do the swap. Then because we need to make the new right array as small as possible, we just do the reverse.
 
+## 34. Search for a Range
+[Reference](https://leetcode.com/problems/search-for-a-range/solution/)
+Since the problem requires a O(logn) solution, we must use binary search. Since we need to know the left and right bounding index for the range, so we have to use parallel binary searches, one searching for the left index and one for the right. The core is that when we are searching for the left index and find one, we know that the left bounding index is not on the right. So we just search again on the left with updated right searching index parameter.
+
 ## 35. Search Insert Position
 Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
 
