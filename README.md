@@ -94,6 +94,10 @@ Since the problem requires a O(logn) solution, we must use binary search. Since 
 ## 35. Search Insert Position
 Nothing to say. A regular approach has O(n). A better one is to use binary search with O(logn).
 
+## 36. Valid Sudoku
+[Reference](https://discuss.leetcode.com/topic/8241/my-short-solution-by-c-o-n2/11)
+The algorithm is not hard. We just need to iterate over each row, column, and subcells to see if they follow the rules. The only thing difficult for me is to figure out how to map subcells to a range from 0 to 9: `k = i / 3 * 3 + j / 3`.
+
 ## 38. Count and Say
 The most difficult part of this problem is to figure out the rule. Basically starting from the 2nd layer, each layer is a string describing the number of consecutive numbers in the previous string.
 
