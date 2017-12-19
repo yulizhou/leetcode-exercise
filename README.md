@@ -112,6 +112,11 @@ Basically it's the same as problem 40. The only difference is to avoid duplicati
 [Reference](http://www.cnblogs.com/TenosDoIt/p/3735309.html)
 The referenced solution has a O(n^2) time. There are also other solutions with less time complexity.
 
+## 46. Permutations
+This is quite similar to other combination problems. Basically we still use a recursion-based DFS search to go over each branch. The only difference is that we need to maintain a visited vector because we want unique combinations. 
+
+A good source of these kinds of problems in Java: [link](https://discuss.leetcode.com/topic/46162/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning)
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
