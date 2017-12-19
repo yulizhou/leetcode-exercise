@@ -108,6 +108,10 @@ This is another combination problem. The basic thought for the solution is to us
 ## 40. Combination Sum II
 Basically it's the same as problem 40. The only difference is to avoid duplication.
 
+## 43. Multiply Strings
+[Reference](http://www.cnblogs.com/TenosDoIt/p/3735309.html)
+The referenced solution has a O(n^2) time. There are also other solutions with less time complexity.
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
