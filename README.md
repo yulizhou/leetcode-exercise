@@ -105,6 +105,9 @@ The most difficult part of this problem is to figure out the rule. Basically sta
 [Reference](http://www.cnblogs.com/grandyang/p/4419259.html)
 This is another combination problem. The basic thought for the solution is to use recursion to search a tree, which is a different tree in different settings. Here we need to use `target-current` as a node and search from the current index and to the right (because we can use repeat numbers).
 
+## 40. Combination Sum II
+Basically it's the same as problem 40. The only difference is to avoid duplication.
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
