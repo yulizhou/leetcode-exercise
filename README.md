@@ -123,6 +123,9 @@ This problem is similar to the above. The only difference is to use `set` and an
 ## 48. Rotate Image
 There are several ways to do this. The simpliest way I found is to transpose first and then reverse each row. 
 
+## 49. Group Anagrams
+The most intuitive way is to maintain a hash table or map that has the list of groups of anagrams. The key here is to find a way to see if a string is an anagram of a group of other anagram strings. One way is to use the sorted string as a key in the map. This requires an extra O(nlogn) time. A better way is to use the counting of 26 letters in a string as the key. This only has O(n) time.
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
