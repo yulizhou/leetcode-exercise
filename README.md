@@ -120,6 +120,9 @@ A good source of these kinds of problems in Java: [link](https://discuss.leetcod
 ## 47. Permutations II
 This problem is similar to the above. The only difference is to use `set` and an `if` to make sure the uniqueness.
 
+## 48. Rotate Image
+There are several ways to do this. The simpliest way I found is to transpose first and then reverse each row. 
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
