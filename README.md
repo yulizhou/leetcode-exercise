@@ -117,6 +117,9 @@ This is quite similar to other combination problems. Basically we still use a re
 
 A good source of these kinds of problems in Java: [link](https://discuss.leetcode.com/topic/46162/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning)
 
+## 47. Permutations II
+This problem is similar to the above. The only difference is to use `set` and an `if` to make sure the uniqueness.
+
 ## 53. Maximum Subarray
 [Reference](https://discuss.leetcode.com/topic/5000/accepted-o-n-solution-in-java)
 Best solution so far is from Jon Bentley's code in 1984. The post explains it well. 
