@@ -136,6 +136,9 @@ Best solution so far is from Jon Bentley's code in 1984. The post explains it we
 ## 54. Spiral Matrix
 There are two ways. One is to iterate over each element and create a turning decision for he index. The other one is to use layers and put each outer rows and columns into the result array. Each way needs to understand how the index changes.
 
+## 55. Jump Game
+The solution section has a very detailed thought process. This is a kind of dynamic programming problem and greedy algo to be specific because we only want a true or false but not the shortest path to the last index. 
+
 ## 58. Length of Last Word
 The trick part is that we may have string with trailing spaces. After getting rid of them, it's easy to just iterate over the last non-space chars.
 
