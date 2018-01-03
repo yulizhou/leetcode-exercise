@@ -154,6 +154,9 @@ It's similar to problem 54 and this one is simpler. The basic idea is to go over
 ## 61. Rotate List
 This is easier than rotating an array because we can just modify the next pointer. Basically we make a circle first. Then we find the right position to cut. 
 
+## 62. Unique Paths
+This is a typical dp problem. The status `dp[i][j]` is the total number of paths until the current cell. The transition function is `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]`, from up and left cells.
+
 ## 66. Plus One
 There are three cases here. If the last digit is not 9, then we can just plus one and return. If all digits are 9, then all digits need to be set to 0 and we add one digit 1 to the front. If only a few consecutive 9s at the latter part of the digit array, then we set all 9s to 0s and add one to the first non-nine digit counting backwards.
 
