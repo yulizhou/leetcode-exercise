@@ -151,6 +151,9 @@ It's similar to problem 54 and this one is simpler. The basic idea is to go over
 ## 60. Permutation Sequence
 [Excellent explaination](http://www.cnblogs.com/grandyang/p/4358678.html)
 
+## 61. Rotate List
+This is easier than rotating an array because we can just modify the next pointer. Basically we make a circle first. Then we find the right position to cut. 
+
 ## 66. Plus One
 There are three cases here. If the last digit is not 9, then we can just plus one and return. If all digits are 9, then all digits need to be set to 0 and we add one digit 1 to the front. If only a few consecutive 9s at the latter part of the digit array, then we set all 9s to 0s and add one to the first non-nine digit counting backwards.
 
