@@ -145,6 +145,9 @@ The solution is quite straightforward. We need to sort asecending first to make 
 ## 58. Length of Last Word
 The trick part is that we may have string with trailing spaces. After getting rid of them, it's easy to just iterate over the last non-space chars.
 
+## 59. Spiral Matrix II
+It's similar to problem 54 and this one is simpler. The basic idea is to go over each edge of the loop, from outer ones to inner ones. We just need to find the change pattern of the index. 
+
 ## 66. Plus One
 There are three cases here. If the last digit is not 9, then we can just plus one and return. If all digits are 9, then all digits need to be set to 0 and we add one digit 1 to the front. If only a few consecutive 9s at the latter part of the digit array, then we set all 9s to 0s and add one to the first non-nine digit counting backwards.
 
