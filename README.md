@@ -139,6 +139,9 @@ There are two ways. One is to iterate over each element and create a turning dec
 ## 55. Jump Game
 The solution section has a very detailed thought process. This is a kind of dynamic programming problem and greedy algo to be specific because we only want a true or false but not the shortest path to the last index. 
 
+## 56. Merge Intervals
+The solution is quite straightforward. We need to sort asecending first to make sure we can find the correct next set of intervals. Then we check if the upper bound of one interval is larger than the lower bound of the next interval. If it is, then we can merge them by reset the upper bound of the resulting interval to the max of the upper bounds of the first and second interval.
+
 ## 58. Length of Last Word
 The trick part is that we may have string with trailing spaces. After getting rid of them, it's easy to just iterate over the last non-space chars.
 
