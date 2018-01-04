@@ -157,6 +157,9 @@ This is easier than rotating an array because we can just modify the next pointe
 ## 62. Unique Paths
 This is a typical dp problem. The status `dp[i][j]` is the total number of paths until the current cell. The transition function is `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]`, from up and left cells.
 
+## 63. Unique Paths II
+This one is very similar to the last one. The only difference is that we need to consider three extra situations: 1. the current cell is a block; 2. the top cell is a block and the left one is not; 3. the left cell is a block and the top one is not.
+
 ## 66. Plus One
 There are three cases here. If the last digit is not 9, then we can just plus one and return. If all digits are 9, then all digits need to be set to 0 and we add one digit 1 to the front. If only a few consecutive 9s at the latter part of the digit array, then we set all 9s to 0s and add one to the first non-nine digit counting backwards.
 
