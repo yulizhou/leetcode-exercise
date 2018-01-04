@@ -169,6 +169,10 @@ There are three cases here. If the last digit is not 9, then we can just plus on
 ## 67. Add Binary
 All summation problems are quite similar. The basic components are: 1. find a way to extract numbers from right to left; 2. calculate the carry using division and floor; 3. calculate the result on a particular position using modular. 
 
+## 69. Sqrt(x)
+[Reference](http://www.cnblogs.com/AnnieKim/archive/2013/04/18/3028607.html)
+Use Newton's method. 
+
 ## 70. Climbing Stairs
 Similar to No.66, it's a dynamic programming problem. The status `dp[i]` is the number of distinct steps at step i. To reach step i, we have to start from i-1 or i-2. So the transition function is `dp[i] = dp[i - 1] + dp[i - 2]`. 
 
