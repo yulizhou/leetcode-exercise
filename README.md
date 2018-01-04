@@ -176,6 +176,9 @@ Use Newton's method.
 ## 70. Climbing Stairs
 Similar to No.66, it's a dynamic programming problem. The status `dp[i]` is the number of distinct steps at step i. To reach step i, we have to start from i-1 or i-2. So the transition function is `dp[i] = dp[i - 1] + dp[i - 2]`. 
 
+## 71. Simplify Path
+The basic idea is to use a stack or stack-like structure and a string split to process every component of the path sequentially. In C++, we can use `stringstream` for this kind of thing.
+
 ## 88. Merge Sorted Array
 [Reference](http://www.cnblogs.com/grandyang/p/4059650.html)
 Basically we start from the end of the merged array with the length of `m+n`. We put whichever element is larger to the current cursor and work backwards. If the all elements in `nums1` are smaller than `nums2`, then we are done. Otherwise, we put elements from `nums2` to the front of the merged array by replacing the old `nums1` elements.
