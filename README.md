@@ -166,6 +166,9 @@ It's a typical dp problem. The only thing is that we need to initialize the min 
 ## 66. Plus One
 There are three cases here. If the last digit is not 9, then we can just plus one and return. If all digits are 9, then all digits need to be set to 0 and we add one digit 1 to the front. If only a few consecutive 9s at the latter part of the digit array, then we set all 9s to 0s and add one to the first non-nine digit counting backwards.
 
+## 67. Add Binary
+All summation problems are quite similar. The basic components are: 1. find a way to extract numbers from right to left; 2. calculate the carry using division and floor; 3. calculate the result on a particular position using modular. 
+
 ## 70. Climbing Stairs
 Similar to No.66, it's a dynamic programming problem. The status `dp[i]` is the number of distinct steps at step i. To reach step i, we have to start from i-1 or i-2. So the transition function is `dp[i] = dp[i - 1] + dp[i - 2]`. 
 
